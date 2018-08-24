@@ -28,39 +28,39 @@ def main():
 
     s = ''
     result = is_palin_perm(s)
-    assert result == True, 'Test 1 failed.'
+    assert result is True, 'Test 1 failed.'
 
     s = 'a'
     result = is_palin_perm(s)
-    assert result == True, 'Test 2 failed.'
+    assert result is True, 'Test 2 failed.'
 
     s = 'ab'
     result = is_palin_perm(s)
-    assert result == False, 'Test 3 failed.'
+    assert result is False, 'Test 3 failed.'
 
     s = 'aa'
     result = is_palin_perm(s)
-    assert result == True, 'Test 4 failed.'
+    assert result is True, 'Test 4 failed.'
 
     s = 'aba'
     result = is_palin_perm(s)
-    assert result == True, 'Test 5 failed.'
+    assert result is True, 'Test 5 failed.'
 
     s = 'aabbb'
     result = is_palin_perm(s)
-    assert result == True, 'Test 6 failed.'
+    assert result is True, 'Test 6 failed.'
 
     s = 'aabb'
     result = is_palin_perm(s)
-    assert result == True, 'Test 7 failed.'
+    assert result is True, 'Test 7 failed.'
 
     s = 'aa bb'
     result = is_palin_perm(s)
-    assert result == True, 'Test 8 failed.'
+    assert result is True, 'Test 8 failed.'
 
     s = 'Aa'
     result = is_palin_perm(s)
-    assert result == True, 'Test 8 failed.'
+    assert result is True, 'Test 8 failed.'
 
 
 if __name__ == '__main__':

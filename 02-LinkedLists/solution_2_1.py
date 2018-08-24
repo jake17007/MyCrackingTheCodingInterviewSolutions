@@ -23,7 +23,7 @@ def display(node):
 
 
 def remove_duplicates(head):
-    if head == None:
+    if head is None:
         return None
     seen = {head.val}
     curr = head.next

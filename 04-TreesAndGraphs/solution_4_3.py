@@ -25,7 +25,7 @@ class BTNode:
 def create_lod(root):
     q = Queue()
     lod = []
-    if root == None:
+    if root is None:
         return lod
     prev_level = -1
     q.put((root, 0))

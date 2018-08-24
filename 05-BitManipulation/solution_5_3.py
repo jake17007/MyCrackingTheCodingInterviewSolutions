@@ -19,7 +19,7 @@ def max_len(n):
         if get_bit_at_i(n, i) == 1:
             curr_len += 1
             prev = 1
-        elif zero_flipped == False:
+        elif zero_flipped is False:
             curr_len += 1
             prev = 0
             zero_flipped = True

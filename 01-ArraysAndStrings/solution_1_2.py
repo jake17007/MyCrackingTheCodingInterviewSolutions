@@ -5,6 +5,7 @@ def put_in_map(map, x):
     else:
         map[x] = 1
 
+
 def check_out_map(map, y):
     prev = map.get(y)
     if not prev:
@@ -13,6 +14,7 @@ def check_out_map(map, y):
         return False
     map[y] = prev - 1
     return True
+
 
 def check_if_perm(a, b):
     if len(a) != len(b):
@@ -24,40 +26,42 @@ def check_if_perm(a, b):
 
     for j in range(len(b)):
         result = check_out_map(map, b[j])
-        if result == False:
+        if result is False:
             return result
 
     return result
 
+
 def main():
     pass
+
 
 if __name__ == '__main__':
 
     a = 'a'
     b = 'a'
-    assert check_if_perm(a, b) == True, 'Test 1 Failed'
+    assert check_if_perm(a, b) is True, 'Test 1 Failed'
 
     a = 'a'
     b = 'b'
-    assert check_if_perm(a, b) == False, 'Test 2 Failed'
+    assert check_if_perm(a, b) is False, 'Test 2 Failed'
 
     a = 'a'
     b = 'aa'
-    assert check_if_perm(a, b) == False, 'Test 3 Failed'
+    assert check_if_perm(a, b) is False, 'Test 3 Failed'
 
     a = 'aa'
     b = 'aa'
-    assert check_if_perm(a, b) == True, 'Test 4 Failed'
+    assert check_if_perm(a, b) is True, 'Test 4 Failed'
 
     a = 'ab'
     b = 'aa'
-    assert check_if_perm(a, b) == False, 'Test 5 Failed'
+    assert check_if_perm(a, b) is False, 'Test 5 Failed'
 
     a = 'ab'
     b = 'ba'
-    assert check_if_perm(a, b) == True, 'Test 6 Failed'
+    assert check_if_perm(a, b) is True, 'Test 6 Failed'
 
     a = 'abcdefggholli'
     b = 'llihafggecdbo'
-    assert check_if_perm(a, b) == True, 'Test 7 Failed'
+    assert check_if_perm(a, b) is True, 'Test 7 Failed'

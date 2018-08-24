@@ -27,7 +27,7 @@ def is_route(a, b):
             return True
         c.visited = True
         for neighbor in c.neighbors:
-            if neighbor.visited == False:
+            if neighbor.visited is False:
                 q.put(neighbor)
     return False
 

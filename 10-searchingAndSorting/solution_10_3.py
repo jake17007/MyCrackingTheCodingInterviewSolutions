@@ -29,7 +29,7 @@ def find_in_rotated_h(a, n, lo, hi):
 def main():
     a, n = [], 1
     result = find_in_rotated(a, n)
-    assert result == None, 'Test 1 failed.'
+    assert result is None, 'Test 1 failed.'
 
     a, n = [1], 1
     result = find_in_rotated(a, n)
@@ -37,7 +37,7 @@ def main():
 
     a, n = [1], 2
     result = find_in_rotated(a, n)
-    assert result == None, 'Test 3 failed.'
+    assert result is None, 'Test 3 failed.'
 
     a, n = [0, 1], 1
     result = find_in_rotated(a, n)
@@ -49,7 +49,7 @@ def main():
 
     a, n = [0, 1], 2
     result = find_in_rotated(a, n)
-    assert result == None, 'Test 6 failed.'
+    assert result is None, 'Test 6 failed.'
 
     a, n = [0, 3, 5], 0
     result = find_in_rotated(a, n)
@@ -61,7 +61,7 @@ def main():
 
     a, n = [0, 3, 5], 6
     result = find_in_rotated(a, n)
-    assert result == None, 'Test 9 failed.'
+    assert result is None, 'Test 9 failed.'
 
     a, n = [5, 3, 0], 0
     result = find_in_rotated(a, n)
@@ -73,7 +73,7 @@ def main():
 
     a, n = [3, 5, 0], 6
     result = find_in_rotated(a, n)
-    assert result == None, 'Test 12 failed.'
+    assert result is None, 'Test 12 failed.'
 
     a, n = [6, 8, 10, 0, 2, 4], 6
     result = find_in_rotated(a, n)

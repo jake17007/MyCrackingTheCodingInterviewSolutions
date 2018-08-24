@@ -33,7 +33,7 @@ def display(a):
 
 def partition(head, n):
     curr = head
-    if curr == None:
+    if curr is None:
         return None
 
     r_head = None
@@ -52,7 +52,7 @@ def partition(head, n):
                 curr.next = None
                 r_tail = curr
         else:
-            if l_head == None:
+            if l_head is None:
                 l_head = curr
                 l_tail = curr
             else:
@@ -72,7 +72,7 @@ def main():
     print('\nTest 1')
     x = None
     y = partition(x, 1)
-    assert y == None, 'Test 1 failed.'
+    assert y is None, 'Test 1 failed.'
 
     print('\nTest 2')
     x = Node(1)

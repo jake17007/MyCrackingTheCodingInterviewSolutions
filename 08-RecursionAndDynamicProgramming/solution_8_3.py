@@ -12,7 +12,7 @@ def find_magic_index_rec(a):
 
 
 def find_magic_index_rec_h(a, left_idx, right_idx):
-    if  right_idx < left_idx:
+    if right_idx < left_idx:
         return None
     mid = (left_idx + right_idx) // 2
     if a[mid] == mid:
@@ -31,9 +31,9 @@ def find_magic_index_rec_h(a, left_idx, right_idx):
 def main():
     x = []
     y = find_magic_index(x)
-    assert y == None, 'Test 1 failed.'
+    assert y is None, 'Test 1 failed.'
     y = find_magic_index_rec(x)
-    assert y == None, 'Test 1 failed.'
+    assert y is None, 'Test 1 failed.'
 
     x = [0]
     y = find_magic_index(x)
@@ -49,15 +49,15 @@ def main():
 
     x = [1]
     y = find_magic_index(x)
-    assert y == None, 'Test 4 failed.'
+    assert y is None, 'Test 4 failed.'
     y = find_magic_index_rec(x)
-    assert y == None, 'Test 4 failed.'
+    assert y is None, 'Test 4 failed.'
 
     x = [-1, 2]
     y = find_magic_index(x)
-    assert y == None, 'Test 5 failed.'
+    assert y is None, 'Test 5 failed.'
     y = find_magic_index_rec(x)
-    assert y == None, 'Test 5 failed.'
+    assert y is None, 'Test 5 failed.'
 
     x = [-1, -1, 0, 3]
     y = find_magic_index(x)
@@ -68,7 +68,6 @@ def main():
     x = [-10, -5, 2, 2, 2, 3, 4, 7, 9, 12, 13]
     y = find_magic_index_rec(x)
     assert y == 2, 'Test 7 failed.'
-
 
 
 if __name__ == '__main__':
