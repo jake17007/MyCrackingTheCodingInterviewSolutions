@@ -1,0 +1,9 @@
+1.4
+
+This problem was pretty easy. I just needed to decide whether to use a hashmap or an array for storing the charater counts. I went with an array quickly. There were a couple hicups. First, I should have put the check for 0 in the check for is_odd (because 0 is not even or odd); I didn't need to add this logic to the primary function. Second, I should have originally account for uppercase and lowercase letter differences. Third, I failed to correctly implement the list comprehensions; list comprehensions cannot contain assignments. Fourth, I failed to realize that the max function cannot take an empty list, therefore I should have accounted for the empty string outright.
+
+
+10.3
+
+In this problem, I started out having issues with the algorithm. I knew that I should use binary sort for an array of distinct elements, but the problem didn't say that all elements would be distinct. So, I went ahead with solving the problem without duplicates, but I should have done that sooner (in the end I was right, the problem could not be solved in O(logn) time if the array contained duplicates). Once I did begin implementing the problem, I ran into some issues with bounds of the array. It would have been better to use the midpoint instead of mid+1 and mid-1 for determining which side of the array to recur on.
+
