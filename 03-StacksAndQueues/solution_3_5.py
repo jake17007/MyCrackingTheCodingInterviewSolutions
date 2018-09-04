@@ -2,6 +2,14 @@ import math
 
 import pytest
 
+TESTS = [
+    ([], []),
+    ([1], [1]),
+    ([2, 1], [2, 1]),
+    ([1, 2], [2, 1]),
+    ([-10, -10, 1, 6, 2, 6, 4], [6, 6, 4, 2, 1, -10, -10])
+]
+
 
 def sort_stack(s):
     len_s = 0
@@ -33,15 +41,6 @@ def sort_stack(s):
     return s2
 
 
-tests = [
-    ([], []),
-    ([1], [1]),
-    ([2, 1], [2, 1]),
-    ([1, 2], [2, 1]),
-    ([-10, -10, 1, 6, 2, 6, 4], [6, 6, 4, 2, 1, -10, -10])
-]
-
-
-@pytest.mark.parametrize('input', tests)
+@pytest.mark.parametrize('input', TESTS)
 def test_sort_stack(input):
     assert sort_stack(input[0]) == input[1]
